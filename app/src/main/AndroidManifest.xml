@@ -58,6 +58,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.tripping.app.AddTripActivity" />
         </activity>
+        <activity
+            android:name=".NavigatorActivity"
+            android:label="@string/title_activity_navigator"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
