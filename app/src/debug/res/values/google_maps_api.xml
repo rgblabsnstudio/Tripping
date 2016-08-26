@@ -1,0 +1,21 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=0D:44:60:E3:14:AD:8A:5A:2D:1D:46:2E:63:E0:A4:7B:F4:F3:58:98%3Bcom.tripping.app
+
+    You can also add your credentials to an existing key, using this line:
+    0D:44:60:E3:14:AD:8A:5A:2D:1D:46:2E:63:E0:A4:7B:F4:F3:58:98;com.tripping.app
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyA0wSGLROaANx-jUpCoQGv0dvk0ICFV7Wg
+    </string>
+</resources>
