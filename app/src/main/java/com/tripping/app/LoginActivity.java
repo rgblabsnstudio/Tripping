@@ -173,6 +173,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     mStatus.setText("Signing In");
                     resolveSignInError();
                     startActivity(new Intent(this,TripActivity.class));
+                    //startActivity(new Intent(this,NavigatorActivity.class));
                     break;
                 case R.id.sign_out:
                     mStatus.setText("Signing Out..");

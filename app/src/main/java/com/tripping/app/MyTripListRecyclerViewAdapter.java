@@ -1,5 +1,6 @@
 package com.tripping.app;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,8 @@ import com.tripping.app.TripListFragment.OnListFragmentInteractionListener;
 import com.tripping.app.dummy.DummyContent.DummyItem;
 
 import java.util.List;
+
+import static android.support.v4.app.ActivityCompat.startActivity;
 
 /**
  * {@link RecyclerView.Adapter} that can display a {@link DummyItem} and makes a call to the
@@ -30,6 +33,7 @@ public class MyTripListRecyclerViewAdapter extends RecyclerView.Adapter<MyTripLi
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.fragment_triplist, parent, false);
+
         return new ViewHolder(view);
     }
 
@@ -68,6 +72,12 @@ public class MyTripListRecyclerViewAdapter extends RecyclerView.Adapter<MyTripLi
             mView = view;
             mIdView = (TextView) view.findViewById(R.id.id);
             mContentView = (TextView) view.findViewById(R.id.content);
+            view.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v){
+                   v.getContext().startActivity(new Intent(v.getContext(),NavigatorActivity.class));
+                }
+            });
         }
 
         @Override
