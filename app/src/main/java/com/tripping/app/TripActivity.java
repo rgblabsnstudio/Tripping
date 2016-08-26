@@ -25,7 +25,7 @@ public class TripActivity extends AppCompatActivity implements TripListFragment.
             public void onClick(View view) {
                 //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                   //      .setAction("Action", null).show();
-                startActivity(new Intent(getApplicationContext(),AddTripActivity.class));
+                startActivity(new Intent(getApplicationContext(),CreateTrip.class));
             }
         });
     }

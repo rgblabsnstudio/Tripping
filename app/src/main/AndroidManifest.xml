@@ -61,7 +61,8 @@
         <activity
             android:name=".NavigatorActivity"
             android:label="@string/title_activity_navigator"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CreateTrip"></activity>
     </application>
 
 </manifest>
