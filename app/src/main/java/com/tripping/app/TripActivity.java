@@ -10,7 +10,7 @@ import android.view.View;
 
 import com.tripping.app.dummy.DummyContent;
 
-public class TripActivity extends AppCompatActivity implements TripListFragment.OnListFragmentInteractionListener {
+public class TripActivity extends AppCompatActivity implements TripListFragment.OnListFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,17 +25,16 @@ public class TripActivity extends AppCompatActivity implements TripListFragment.
             public void onClick(View view) {
                 //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                   //      .setAction("Action", null).show();
+               // startActivity(new Intent(getApplicationContext(),CreateTrip.class));
                 startActivity(new Intent(getApplicationContext(),AddTripActivity.class));
             }
         });
     }
 
-    public void onListFragmentInteraction(DummyContent trips){
-        //don't know what to do
-    }
-
     @Override
     public void onListFragmentInteraction(DummyContent.DummyItem item) {
 
+
     }
+
 }
