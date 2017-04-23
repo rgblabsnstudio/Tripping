@@ -1,5 +1,8 @@
 package com.tripping.app.dummy;
 
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -25,7 +28,9 @@ public class DummyContent {
      */
     public static final Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
 
-    private static final int COUNT = 25;
+    private static final int COUNT = 10;
+    private static final String SOURCE = "Bangalore";
+    private static final String DESTINATION = "Goa";
 
     static {
         // Add some sample items.
@@ -46,9 +51,9 @@ public class DummyContent {
     private static String makeDetails(int position) {
         StringBuilder builder = new StringBuilder();
         builder.append("Details about Item: ").append(position);
-        for (int i = 0; i < position; i++) {
+        /*for (int i = 0; i < position; i++) {
             builder.append("\nMore details information here.");
-        }
+        }*/
         return builder.toString();
     }
 
@@ -59,11 +64,14 @@ public class DummyContent {
         public final String id;
         public final String content;
         public final String details;
+        //public final GoogleMap googleMap;
 
+        //public DummyItem(String id, String content, String details, GoogleMap googleMap) {
         public DummyItem(String id, String content, String details) {
             this.id = id;
             this.content = content;
             this.details = details;
+            //this.googleMap = googleMap;
         }
 
         @Override
@@ -71,4 +79,10 @@ public class DummyContent {
             return content;
         }
     }
+/* , createMap(SOURCE,DESTINATION)
+    public static GoogleMap createMap(String source, String desitnation){
+        GoogleMap tripMap = new GoogleMap();
+        return tripMap;
+    }
+    */
 }
